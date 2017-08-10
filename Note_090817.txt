@@ -1,0 +1,24 @@
+﻿SpringMVC4 project
+
+1/ WebContent -> WEB-INF:
+(should be create views folder, configs at here for security)
+- lib: remmember copy all of libs to use spring framework and some others libs
+- spring-configs: 
+  + spring-config-mvc.xml file: configs view and controller
+  + spring-config-resources.xml file: config Bundle Resources
+- views: include all view (jsp file) of project
+
+2/ WebContent -> web.xml: configs Dispatcher and UTF-8 Filter
+
+3/ WebContent -> js: copy 2 jquery lib to validate data at client side
+
+4/ src -> eshop.bean: bean (getter/setter) for Validation demo
+
+5/ src -> nhatnghe.controller:
+- include controller to handling logic in project
+- StudentController.java: controller of Validation demo
+- DIController.java: demo for dependency injection combanation 
+with student.properties file in res folder
+
+6/ res -> student.properties: Reuse the error message when validation
+Note: must be create properties file with .properties
